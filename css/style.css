@@ -119,6 +119,14 @@ body {
     background-color: #FF3E79;
 }
 
+.button__img {
+    padding: 5px 0px 0px 0px;
+}
+
+.main-button .button__img {
+    padding: 10px 0px 0px 0px;
+}
+
 .contact-button1 {}
 
 .contact-button2 {}
