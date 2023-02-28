@@ -194,9 +194,9 @@ body {
     display: none;
 }
 
-.services-nav {}
+.main__navigation {}
 
-.services-nav__list {
+.navigation__list {
     display: flex;
     white-space: nowrap;
     overflow: scroll;
@@ -205,26 +205,30 @@ body {
     margin: 0px 0px 24px 0px;
 }
 
-.services-nav__list::-webkit-scrollbar {
+.navigation__list::-webkit-scrollbar {
     width: 0;
     height: 0;
 }
 
-.services-nav__item {
+.navigation__item a {
     background-color: #F8F8F8;
+    display: block;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: -0.2px;
     color: #7E7E82;
+    text-decoration: none;
+    border: 2px solid transparent;
     padding: 8px 22px;
 }
 
-.services-nav__item--active {
+.navigation__item a:hover {
     background-color: #fff;
     border: 2px solid #B8FFEC;
     border-radius: 6px;
 }
+
 
 .main__content {
     display: flex;
@@ -350,7 +354,7 @@ body {
         padding: 0px 34px;
     }
 
-    .services-nav__list {
+    .navigation__list {
         overflow: visible;
         flex-wrap: wrap;
     }
@@ -376,10 +380,6 @@ body {
     .main__offer button {
         margin: 0px 0px 0px 32px;
     }
-
-    /* .main__offer button:first-child {
-        margin-left: 0;
-    } */
 
     .main-button {
         display: flex;
