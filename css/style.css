@@ -75,8 +75,8 @@ body {
     align-items: center;
 }
 
-.header__left,
-.header__right {
+.header__sign,
+.header__actions {
     display: flex;
     align-items: center;
 }
@@ -90,7 +90,7 @@ body {
     width: 2px;
     height: 32px;
     border-radius: 2px;
-    background-color: #F8F8F8;
+    background-color: blue;
     margin: 0px 20px 0px 0px;
 }
 
@@ -109,7 +109,7 @@ body {
 }
 
 .header__contacts li:last-child {
-    margin: 0px 20px 0px 0px;
+    margin: 0px 40px 0px 0px;
 }
 
 .button {
@@ -149,6 +149,23 @@ body {
 
 .header__offer li {
     margin: 0px 16px 0px 0px;
+}
+
+.header__offer li:first-child {
+    position: relative;
+}
+
+.header__offer li:first-child::before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 32px;
+    position: absolute;
+    top: 4px;
+    left: -21px;
+    border-radius: 2px;
+    background-color: #F8F8F8;
+    margin: 0px 20px 0px 0px;
 }
 
 .header__offer li:last-child {
@@ -287,6 +304,27 @@ body {
 @media (min-width: 768px) {
     .container {
         padding: 0px 24px;
+    }
+
+    .header__burger {
+        margin: 0px 40px 0px 0px;
+    }
+
+    .header__logo {
+        position: relative;
+    }
+
+    .header__logo::before {
+        content: '';
+        display: block;
+        width: 2px;
+        height: 32px;
+        position: absolute;
+        top: 4px;
+        left: -21px;
+        border-radius: 2px;
+        background-color: #F8F8F8;
+        margin: 0px 20px 0px 0px;
     }
 
     .header__divider.one {
